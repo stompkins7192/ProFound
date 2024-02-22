@@ -78,20 +78,20 @@ profoundProFound=function(image=NULL, segim=NULL, objects=NULL, mask=NULL, skycu
   
   if(box[1] > ceiling(dim(image)[1]/3)){
     box[1] = ceiling(dim(image)[1]/3)
-    message('dim(image)[1]/box[1] must be >=3, box[1] modified to ',box[1])
+   # message('dim(image)[1]/box[1] must be >=3, box[1] modified to ',box[1])
   }
   if(box[2] > ceiling(dim(image)[2]/3)){
     box[2] = ceiling(dim(image)[2]/3)
-    message('dim(image)[2]/box[2] must be >=3, box[2] modified to ',box[2])
+  #  message('dim(image)[2]/box[2] must be >=3, box[2] modified to ',box[2])
   }
   
   if(grid[1] > ceiling(dim(image)[1]/3)){
     grid[1] = ceiling(dim(image)[1]/3)
-    message('dim(image)[1]/grid[1] must be >=3, grid[1] modified to ',grid[1])
+ #   message('dim(image)[1]/grid[1] must be >=3, grid[1] modified to ',grid[1])
   }
   if(grid[2] > ceiling(dim(image)[2]/3)){
     grid[2] = ceiling(dim(image)[2]/3)
-    message('dim(image)[2]/grid[2] must be >=3, grid[2] modified to ',grid[2])
+   # message('dim(image)[2]/grid[2] must be >=3, grid[2] modified to ',grid[2])
   }
   
   if(verbose){message(paste('Supplied image is',dim(image)[1],'x',dim(image)[2],'pixels'))}
